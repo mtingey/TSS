@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+<title>The Signal Sound</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
+<link rel="stylesheet" href="styles.css">
+<!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato"> -->
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- <link rel="stylesheet" href="font-awesome.css"> -->
+<style>
+body {font-family: "Lato", sans-serif}
+.mySlides {display: none}
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-black w3-card-2">
+    <img class="logo" src="images/TSSStackedWhiteOnBlack.jpg" alt="band logo"/>
+    <a class="w3-bar-item w3-button w3-padding-24 w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-24 w3-large"><i class="fa fa-home"></i>&nbsp;&nbsp;HOME</a>
+    <a href="#band" class="w3-bar-item w3-button w3-padding-24 w3-hide-medium w3-large"><i class="fa fa-users"></i>&nbsp;&nbsp;BAND</a>
+    <a href="#shows" class="w3-bar-item w3-button w3-padding-24 w3-hide-medium w3-large"><i class="fa fa-music"></i>&nbsp;&nbsp;SHOWS</a>
+    <a href="#media" class="w3-bar-item w3-button w3-padding-24 w3-hide-medium w3-large"><i class="fa fa-headphones"></i>&nbsp;&nbsp;MEDIA</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-padding-24 w3-hide-medium w3-large"><i class="fa fa-envelope"></i>&nbsp;&nbsp;CONTACT</a>
+    
+    <!-- <div class="w3-dropdown-hover w3-hide-small">
+      <button class="w3-padding-large w3-button" title="More">MORE <i class="fa fa-caret-down"></i></button>     
+      <div class="w3-dropdown-content w3-bar-block w3-card-4">
+        <a href="#" class="w3-bar-item w3-button">Merchandise</a>
+        <a href="#" class="w3-bar-item w3-button">Extras</a>
+        <a href="#" class="w3-bar-item w3-button">Media</a>
+      </div>
+    </div> -->
+    <!-- <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a> -->
+    <p class="w3-padding">
+        <a href="mailto:TheSignalSoundMusic@gmail.com"><i class="fa fa-envelope w3-hover-opacity w3-right w3-xlarge w3-container"></i></a>
+        <i class="fa fa-instagram w3-hover-opacity w3-right w3-xlarge w3-container"></i>
+        <a href="https://twitter.com/sound_signal" target="_blank"><i class="fa fa-twitter   w3-hover-opacity w3-right w3-xlarge w3-container"></i></a>
+        <a href="https://open.spotify.com/artist/3XJOrmMnE75MDYsjvYmwUF" target="_blank"><i class="fa fa-spotify   w3-hover-opacity w3-right w3-xlarge w3-container"></i></a>
+        <a href="https://www.youtube.com/channel/UCK529NGwsTmG46BWPnlSxTg/videos" target="_blank"><i class="fa fa-youtube   w3-hover-opacity w3-right w3-xlarge w3-container"></i></a>    
+        <a href="https://www.facebook.com/thesignalsound/" target="_blank"><i class="fa fa-facebook-official   w3-hover-opacity w3-right w3-xlarge w3-container"></i></a>
+    </p>
+  </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+  <a href="#band" class="w3-bar-item w3-button w3-padding-large">BAND</a>
+  <a href="#shows" class="w3-bar-item w3-button w3-padding-large">SHOWS</a>
+  <a href="#media" class="w3-bar-item w3-button w3-padding-large">MEDIA</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large">CONTACT</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">MERCH</a>
+</div>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:2000px;margin-top:74px">
+
+  <!-- Automatic Slideshow Images -->
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/band3.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <!-- <h3>The Signal Sound @ Utah Music Festival</h3> -->
+      <!-- <p><b>Rockin in the free world!</b></p>    -->
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/live.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <!-- <h3>Live Shows</h3> -->
+      <!-- <p><b>Come see us play live.</b></p>     -->
+    </div>
+  </div>
+  <div class="mySlides w3-display-container w3-center">
+    <img src="images/album.jpg" style="width:100%">
+    <div class="w3-display-bottommiddle w3-container w3-text-white w3-padding-32 w3-hide-small">
+      <!-- <h3>New Album out now!!!</h3> -->
+      <!-- <p><b>Get our new album <i>Broken Homes</i>...it's available at all fine music retailers.</b></p>     -->
+    </div>
+  </div>
+
+  <!-- The Band Section -->
+  <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
+    <br><br>
+    <h2 class="w3-wide">THE BAND</h2>
+    <!-- <p class="w3-opacity"><i>We're a band</i></p> -->
+    <p class="w3-justify">4 piece rock band from Utah looking for their music to GROW. We'vejust released our second full length album 'Broken Homes'. Pick up a copy now!</p>
+    <div class="w3-row w3-padding-32">
+      <div class="w3-quarter">
+        <p>Mike</p>
+        <img src="images/mike.jpg"
+            class="w3-round w3-margin-bottom" 
+            alt="Lead Singer" 
+            width=150px
+            height=225px>
+      </div>
+      <div class="w3-quarter">
+        <p>Merrill</p>
+        <img src="images/merrill.jpg"
+            class="w3-round w3-margin-bottom" 
+            alt="Lead Guitar" 
+            width=150px
+            height=225px>
+      </div>
+      <div class="w3-quarter">
+        <p>Randal</p>
+        <!-- <img src="https://scontent-sea1-1.xx.fbcdn.net/v/t31.0-8/13047842_1067931553250327_5184966423302766282_o.jpg?oh=7fb9100a57e59e92adc7fe637132ac9d&oe=5A28EF69"  -->
+        <img src="images/randal2.jpg"
+            class="w3-round" 
+            alt="Lead Drums" 
+            width=150px
+            height=225px>
+      </div>
+      <div class="w3-quarter">
+        <p>Ryan</p>
+        <!-- <img src="https://scontent-sea1-1.xx.fbcdn.net/v/t1.0-9/12592385_1067931666583649_3041640155074001704_n.jpg?oh=5761ebaa2b8442559f12a4d696e60737&oe=5A29492F"  -->
+        <img src="images/ryan1.jpg"
+            class="w3-round" 
+            alt="Lead Bass"
+            width=150px
+            height=225px>
+          </div>
+    </div>
+  </div>
+
+  <!-- The Shows Section -->
+  <div class="w3-black" id="shows">
+    <br><br>
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px">
+      <h2 class="w3-wide w3-center">Live Shows</h2>
+      <!-- <p class="w3-opacity w3-center"><i>Come out to a live show & have some fun with us!</i></p><br> -->
+
+      <ul class="w3-ul w3-border w3-white w3-text-grey">
+        <li class="w3-padding">July 14 2017 - The Royal - Salt Lake City, UT<span class="w3-tag w3-red w3-margin-left">Sold out</span></li>
+        <li class="w3-padding"><strike>August 18 2017 - Jackalope Music Festival - BFE, UT</strike><span class="w3-tag w3-red w3-margin-left">Cancelled</span></li>
+        <li class="w3-padding">August 25 2017 - Metro Music Hall - Salt Lake City, UT <span class="w3-tag w3-margin-left">What a great show!!!</span></li>
+        <!-- <li class="w3-padding">August 25 2017 - Metro Music Hall - Salt Lake City, UT <span class="w3-badge w3-right w3-margin-right">With Larusso</span></li> -->
+      </ul>
+
+      <div class="w3-row-padding w3-padding-32" style="margin:0 -16px">
+        <div class="w3-third w3-margin-bottom">
+          <img src="images/royal.jpg" alt="CD Release" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>SLC, UT - The Royal</b></p>
+            <p class="w3-opacity">Fri 14 Jul 2017</p>
+            <p><b>CD Release party at The Royal.  Come out and get a CD like its still the 90's.</b></p>
+            <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('theRoyalTicketModal').style.display='block'">Buy Tickets</button>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="images/jackalope.jpg" alt="Jackalope" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b><strike>BFE, UT - Jackalope</strike></b></p>
+            <p><b>CANCELLED<b></p>
+            <p class="w3-opacity">Sat 18 Aug 2017</p>
+            <p>Probably the best concert that was ever held.  We really missed out by not playing this one.</p>
+            <!-- <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button> -->
+            <a href="https://jackalopemusicfestival.ticketspice.com/jackalope-music-festival" target="_blank" class="w3-button w3-black w3-margin-bottom">Buy Tickets</a>
+          </div>
+        </div>
+        <div class="w3-third w3-margin-bottom">
+          <img src="images/larusso.jpg" alt="Larusso" style="width:100%" class="w3-hover-opacity">
+          <div class="w3-container w3-white">
+            <p><b>SLC, UT - Metro Music Hall</b></p>
+            <p class="w3-opacity">Fri 25 Aug 2017</p>
+            <p>Back with our old pals in Larusso again, plus don't miss the beast himself in Ghost of a Giant!!!</p>
+            <!-- <button class="w3-button w3-black w3-margin-bottom" onclick="document.getElementById('ticketModal').style.display='block'">Buy Tickets</button> -->
+            <a href="http://www.ticketfly.com/event/1506380-larusso-salt-lake-city/" target="_blank" class="w3-button w3-black w3-margin-bottom">Buy Tickets</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modified Ticket Modal for shows at the Royal -->
+  <div id="theRoyalTicketModal" class="w3-modal">
+        <div class="w3-modal-content w3-animate-top w3-card-4">
+          <header class="w3-container w3-grey w3-center w3-padding-32"> 
+            <span onclick="document.getElementById('theRoyalTicketModal').style.display='none'" 
+                class="w3-button w3-grey w3-xlarge w3-display-topright">×</span>
+            <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+          </header>
+          <div class="w3-container">
+            <p><label><i class="fa fa-ticket"></i>&emsp;Tickets for this show are $3 when purchased at the door and when on The Signal Sound guest list.</label></p>
+            <p><label><i class="fa fa-facebook-official"></i>&emsp;To have your name placed on the guest list for this show please <a href="https://www.facebook.com/messages/t/thesignalsound" target="_balnk">message us on facebook,</a></label></p>
+            <p><label><i class="fa fa-envelope"></i>&emsp;or email us at <a href="mailto:TheSignalSoundMusic@gmail.com">TheSignalSoundMusic@gmail.com</a></label></p>
+            <button class="w3-button w3-blue w3-section w3-right" onclick="document.getElementById('theRoyalTicketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+          </div>
+        </div>
+      </div>
+    
+  <!-- Original Ticket Modal -->
+  <!-- <div id="ticketModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4">
+      <header class="w3-container w3-teal w3-center w3-padding-32"> 
+        <span onclick="document.getElementById('ticketModal').style.display='none'" 
+       class="w3-button w3-teal w3-xlarge w3-display-topright">×</span>
+        <h2 class="w3-wide"><i class="fa fa-suitcase w3-margin-right"></i>Tickets</h2>
+      </header>
+      <div class="w3-container">
+        <p><label><i class="fa fa-shopping-cart"></i> Tickets, $15 per person</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="How many?">
+        <p><label><i class="fa fa-user"></i> Send To</label></p>
+        <input class="w3-input w3-border" type="text" placeholder="Enter email">
+        <button class="w3-button w3-block w3-teal w3-padding-16 w3-section w3-right">PAY <i class="fa fa-check"></i></button>
+        <button class="w3-button w3-red w3-section" onclick="document.getElementById('ticketModal').style.display='none'">Close <i class="fa fa-remove"></i></button>
+        <p class="w3-right">Need <a href="#" class="w3-text-blue">help?</a></p>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- The Media Section ... adaped from Original Contact Section -->
+  <div class="w3-container w3-content w3-padding-64  w3-center" style="max-width:1500px" id="media">
+    <br><br>    
+    <h2 class="w3-wide w3-center">MEDIA</h2>
+    <p class="w3-opacity w3-center">
+        <a href="https://itunes.apple.com/us/artist/the-signal-sound/id1078880822" target="_blank" style="text-decoration:none"><i class="fa fa-apple" style="width:30px"></i>Purchase music on itunes&emsp;</a>
+        <a href="https://play.google.com/store/music/artist/The_Signal_Sound?id=Alg3hlvzy2rvl3pbfaklemaj7d4" target="_blank" style="text-decoration:none"><i class="fa fa-google" style="width:30px"></i>Purchase music on Google Play&emsp;</a>
+        <a href="https://www.amazon.com/Broken-Homes-Signal-Sound/dp/B073X6Y2XP/ref=sr_1_1?s=dmusic&ie=UTF8&qid=1503695795&sr=1-1-mp3-albums-bar-strip-0&keywords=The+Signal+Sound" target="_blank" style="text-decoration:none"><i class="fa fa-amazon" style="width:30px"></i>Purchase music on Amazon&emsp;</a>
+        <a href="https://www.youtube.com/channel/UCK529NGwsTmG46BWPnlSxTg/videos" target="_blank" style="text-decoration:none"><i class="fa fa-youtube" style="width:30px"></i>Stream videos on YouTube&emsp;</a>
+        <a href="https://open.spotify.com/artist/3XJOrmMnE75MDYsjvYmwUF" target="_blank" style="text-decoration:none"><i class="fa fa-spotify" style="width:30px"></i>Stream music on spotify</a>
+    </p>
+
+    <div>
+        <!-- 2nd Album -->
+        <div>
+            <img class="albumCovers"
+                src="images/brokenhomes.jpg"
+                alt="Broken Homes Album Cover"
+            />
+            <iframe
+                src="https://www.youtube.com/embed/ZdP-qsjlSJk"
+                width="375" 
+                height="375" 
+                style="border:none"
+                frameborder="0"
+                allowtransparency="true">
+            </iframe>
+            <iframe
+                src="https://open.spotify.com/embed/album/2lzCUjL7NzzfiwMOmf2IEo" 
+                width="375" 
+                height="375" 
+                frameborder="0" 
+                allowtransparency="true">
+            </iframe>
+        </div>  
+        <!-- 1st Album -->
+        <div>
+            <img class="albumCovers"
+                src="images/selftitled.jpg"
+                alt="Broken Homes Album Cover"
+            />
+            <iframe
+                src="https://www.youtube.com/embed/4gDbeJ1imn0"
+                width="375" 
+                height="375"
+                frameborder="0" 
+                allowtransparency="true">
+            </iframe>
+            <iframe
+                src="https://open.spotify.com/embed/album/2XwHWQxcCh25IgnBDJLVxF" 
+                width="375" 
+                height="375" 
+                frameborder="0" 
+                allowtransparency="true">
+            </iframe>
+        </div>
+    </div>
+</div>
+
+<!-- The Contact Section -->
+<div class="w3-black w3-container w3-content w3-padding-64" style="max-width:100%" id="contact">
+    <br><br>
+    <h2 class="w3-wide w3-center">CONTACT</h2>
+    <!-- <p class="w3-opacity w3-center"><i>Need to get in touch?  Hit us up!</i></p> -->
+    <div class="w3-row w3-padding-32">
+        <div class="m6 w3-large w3-center">
+            <a href="https://www.facebook.com/messages/t/thesignalsound" target="_balnk" style="text-decoration:none"><i class="fa fa-facebook-official" style="width:30px"></i>&nbsp;Message us on facebook&emsp;&emsp;&emsp;</a>
+            <i class="fa fa-map-marker" style="width:30px"></i> Salt Lake City, UT&emsp;&emsp;&emsp;
+            <i class="fa fa-phone" style="width:30px"></i> Phone: 801.669.4452&emsp;&emsp;&emsp;
+            <i class="fa fa-envelope" style="width:30px"> </i> Email: <a href="mailto:TheSignalSoundMusic@gmail.com">TheSignalSoundMusic@gmail.com</a><br>
+        </div>
+    </div>
+</div>
+
+
+<!-- End Page Content -->
+</div>
+<!-- Add Google Maps -->
+<div id="googleMap" style="height:400px;" class="w3-grayscale-max"></div>
+<script>
+function myMap() {
+  myCenter=new google.maps.LatLng(40.758701, -111.876183);
+  var mapOptions= {
+    center:myCenter,
+    zoom:12, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjqwojFHsv9Ye2WpjRVGS0Bq0Q4HoFbrc&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+<!-- Footer -->
+<footer class="w3-black w3-container w3-padding-64 w3-center w3-xlarge">
+    <a href="#" class="w3-button w3-black w3-margin-bottom"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 4 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 4000);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else { 
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// When the user clicks anywhere outside of the modal, close it
+var modal = document.getElementById('ticketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+var modal = document.getElementById('theRoyalTicketModal');
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+</script>
+
+</body>
+</html>
