@@ -1782,3 +1782,9 @@ a {
   /* padding: 0 0 5px 0; */
   height: 75px;
 }
+
+.past-shows {
+  /* opacity: 0.25; */
+  color: #6161615b!important;
+  background-color: #61616100!important
+}
